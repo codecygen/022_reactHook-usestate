@@ -1,25 +1,21 @@
 import React from "react";
+// import React, { useState } from "react";
 import ReactDOM from "react-dom";
 
 const App = () => {
 
-  let count = 0;
+  let state = React.useState();
+  // let state = useState();
+
+  console.log(state);
 
   let increase = () => {
-    count++;
-    ReactDOM.render(
-      <div className="container">
-        <h1>{count}</h1>
-        <button onClick={increase}>+</button>
-      </div>,
-      document.getElementById("root")
-    );
-    
+    // count++;
   }
   
     return(
       <div className="container">
-        <h1>{count}</h1>
+        <h1>0</h1>
         <button onClick={increase}>+</button>
       </div>
     )
