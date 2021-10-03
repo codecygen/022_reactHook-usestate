@@ -27,3 +27,11 @@ button {
   font-weight: bold;
   font-size: 50px;
 }
+
+.watch {
+  font-size: 35px;
+}
+
+.time-btn {
+  width: 250px;
+}
