@@ -15,9 +15,11 @@ const App = () => {
   }
 
   const [initialTime, setTime] = useState('Time');
-  const getTime = setInterval(() => {
-    setTime(new Date().toLocaleTimeString());
-  }, 1000);
+  const getTime = () => {
+    let timeNow = new Date().toLocaleTimeString();
+    setTime(timeNow);
+    setInterval(getTime, 1000);
+  };
 
     return(
       <div>
